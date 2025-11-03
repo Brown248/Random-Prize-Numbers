@@ -1,0 +1,68 @@
+body {
+  font-family: "Prompt", sans-serif;
+  text-align: center;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 50px 0;
+}
+
+h1 {
+  font-size: 50px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 22px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.result-box {
+  font-size: 40px;
+  font-weight: bold;
+  background: white;
+  display: inline-block;
+  padding: 20px 60px;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.result-box.spin {
+  animation: flicker 0.1s infinite;
+  color: #0078ff;
+}
+
+button {
+  margin-top: 40px;
+  font-size: 26px;
+  padding: 12px 35px;
+  border: none;
+  border-radius: 12px;
+  background-color: #0078ff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #005ecb;
+}
+
+#final-message {
+  margin-top: 50px;
+  font-size: 26px;
+  font-weight: 500;
+  color: #333;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes flicker {
+  0%, 100% { color: #0078ff; transform: scale(1); }
+  50% { color: #ff006e; transform: scale(1.1); }
+}
